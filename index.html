@@ -1,43 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>La data dans tous ses états : les bases</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Joël Gombin, Datactivist" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# La data dans tous ses états : les bases
+## Académie des futurs leaders
+### Joël Gombin, Datactivist
+
 ---
-title: "La data dans tous ses états : les bases"
-subtitle: "Académie des futurs leaders"
-author: "Joël Gombin, Datactivist"
-date: ""
-output:
-  SlidesDatactivist::moon_reader:
-    css: [default, datactivist, datactivist-fonts]
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      beforeInit: "https://platform.twitter.com/widgets.js"
-    anchor_sections: false
-params:
-  event: Académie des futurs leaders
-  slug: afl_data/
----
+
 
 layout: true
   
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'accidents.png', package='SlidesDatactivist'), "' width='100px'></center></span></div>")` 
+&lt;div class='my-footer'&gt;&lt;span&gt;Académie des futurs leaders&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
 
 ---
 
 class: center, middle
 
-Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
+Ces slides en ligne : http://datactivist.coop/afl_data/
 
-Sources : `r paste0("https://github.com/datactivist/", params$slug)`
+Sources : https://github.com/datactivist/afl_data/
 
 
 Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
 
-<BR>
-<BR>
+&lt;BR&gt;
+&lt;BR&gt;
 
-.center[<img src="./img/ccbysa.png" height="100"/>] 
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
 
 ---
 class:center, middle, inverse
@@ -50,7 +52,7 @@ class:center, middle, inverse
 [Interview de Serge Abiteboul](https://www.youtube.com/watch?v=qqvsiTUJy7k), commissaire scientifique de l'[exposition Terradata](https://www.cite-sciences.fr/fr/ressources/expositions-passees/terra-data/) et directeur de recherche à l'Inria :
 
 .center[
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qqvsiTUJy7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qqvsiTUJy7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 ]
 
 ---
@@ -64,14 +66,14 @@ Classe: middle
  
 .pull-right[
  
-> *Les données sont couramment comprises comme les matériaux bruts produits dans l’abstraction du monde en catégories, mesures et toute autre forme de représentation-nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits qui constituent les fondations sur lesquelles l’information et le savoir sont créés.*
+&gt; *Les données sont couramment comprises comme les matériaux bruts produits dans l’abstraction du monde en catégories, mesures et toute autre forme de représentation-nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits qui constituent les fondations sur lesquelles l’information et le savoir sont créés.*
 ]
 
 ---
 
 ## Les données sont partout !
 
-.center[<img src="./img/dataeverywhere.png" height="350"/>]
+.center[&lt;img src="./img/dataeverywhere.png" height="350"/&gt;]
 
 
 #### Identifiez 3 appareils qui collectent des données 
@@ -98,7 +100,7 @@ Attribuée à [Russell Ackoff](http://en.wikipedia.org/wiki/Russell_L._Ackoff) e
 Class:
 ## La pyramide Data-Information-Knowledge-Wisdom
 
-.center[<img src="./img/competence.png" height="300"/>]
+.center[&lt;img src="./img/competence.png" height="300"/&gt;]
 
 _NB : le haut de la pyramide, est parfois remplacé par "compétence"_
 
@@ -145,11 +147,11 @@ Vers 3200 av. J.-C., en Mésopotamie, la civilisation sumérienne a inventé l�
 
 
 .pull-left[
-<img src="./img/tabletteargile.png" height="300"/>
+&lt;img src="./img/tabletteargile.png" height="300"/&gt;
 ]
 
 .pull-right[
->Arbres et têtes de bétails sont classés pour être comptabilisés. On a bien affaire ici à des données.
+&gt;Arbres et têtes de bétails sont classés pour être comptabilisés. On a bien affaire ici à des données.
 ]
 ---
 
@@ -187,7 +189,7 @@ En 1979, Dan Bricklin, un ancien analyste financier exaspéré par les technique
 
 Son logiciel "Visicalc", .red[démocratise la production des données] en proposant le système de la feuille de calcul sur laquelle les données peuvent être directement manipulées : 
 
-> "La facilité d’utilisation de Visicalc provenait du fait que l’utilisateur n’avait pas besoin de connaitre de langage de programmation. Sur cet aspect, Visicalc était **l’équivalent du traitement de texte** dans lequel un utilisateur arrange directement l’impression de la page, à l’opposé des systèmes d’écriture où l’utilisateur devait inscrire un ensemble d’inscriptions pour mettre en page le texte." ([Campbell-Kelly, 2007](http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780198508410.001.0001/acprof-9780198508410))
+&gt; "La facilité d’utilisation de Visicalc provenait du fait que l’utilisateur n’avait pas besoin de connaitre de langage de programmation. Sur cet aspect, Visicalc était **l’équivalent du traitement de texte** dans lequel un utilisateur arrange directement l’impression de la page, à l’opposé des systèmes d’écriture où l’utilisateur devait inscrire un ensemble d’inscriptions pour mettre en page le texte." ([Campbell-Kelly, 2007](http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780198508410.001.0001/acprof-9780198508410))
 
 ---
 
@@ -195,7 +197,7 @@ Son logiciel "Visicalc", .red[démocratise la production des données] en propos
 
 .center[ Dan Bricklin et Bob Frankston ont inventé le tableur, le premier logiciel de calcul de masse. Découvrez en 5 minutes leur invention : 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2a5ex5QlocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2a5ex5QlocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 ]
 
 ---
@@ -207,8 +209,8 @@ class:center, middle, inverse
 ## Le déluge des données
 La réflexion autour de la fin de la science part du constat de l'explosion de la production de données comme l'illustre cette infographie sur les réseaux sociaux en une minute. 
 .pull-left[
-> "Avec suffisamment de données, les chiffres parlent d’eux-mêmes." 
-> Chris Anderson, journaliste *Wired Magazine*
+&gt; "Avec suffisamment de données, les chiffres parlent d’eux-mêmes." 
+&gt; Chris Anderson, journaliste *Wired Magazine*
 
 .footnote[[Consulter la source](http://internetactu.blog.lemonde.fr/2011/09/30/big-data-est-ce-que-le-deluge-de-donnees-va-rendre-la-methode-scientifique-obsolete/)]
 ]
@@ -221,7 +223,7 @@ La réflexion autour de la fin de la science part du constat de l'explosion de l
 
 ## De plus en plus de données
 
-<img src="./img/internetminute2019.jpg" height="240"/> | <img src="./img/internetminute2020.jpg" height="240"/> | <img src="./img/internetminute2021.jpg" height="240"/>
+&lt;img src="./img/internetminute2019.jpg" height="240"/&gt; | &lt;img src="./img/internetminute2020.jpg" height="240"/&gt; | &lt;img src="./img/internetminute2021.jpg" height="240"/&gt;
 
 En deux jours, l’humanité produit autant d'information que ce qu'elle a produit depuis la naissance de l'écriture jusqu’en 2003.
 
@@ -230,7 +232,7 @@ En deux jours, l’humanité produit autant d'information que ce qu'elle a produ
 ### C'est nouveau ce déluge ?
 
 .pull-left[
-> *"Les perceptions d'une "surabondance informationnelle" (ou d'un "déluge de données") ont émergé de manière répétée depuis la Renaissance jusqu'aux périodes modernes et, à chaque fois, des technologies spécifiques ont été inventées pour gérer la surabondance perçue."*
+&gt; *"Les perceptions d'une "surabondance informationnelle" (ou d'un "déluge de données") ont émergé de manière répétée depuis la Renaissance jusqu'aux périodes modernes et, à chaque fois, des technologies spécifiques ont été inventées pour gérer la surabondance perçue."*
 
 Strasser, B. J. (2012). "[Data-driven sciences: From wonder cabinets to electronic databases""](http://biologie.unige.ch/assets/brunostrasser//Strasser_SHPSSB_2012.pdf)
 ]
@@ -243,10 +245,10 @@ Strasser, B. J. (2012). "[Data-driven sciences: From wonder cabinets to electron
 
 Les sciences sont traversées par la promesse d’un **.red[quatrième paradigme scientifique]**. Il suffirait alors d'**explorer les données pour .red[identifier des corrélations]** (une relation entre des phénomènes) et de **comprendre la causalité.** 
 
-> Le déluge des données rend la méthode scientifique obsolète, l’analyse des motifs et des relations contenues dans les données massives produit intrinsèquement un savoir significatif et éclairé sur des phénomènes complexes. Il y a maintenant une meilleure manière de faire. Les petabytes nous permettent de dire que « la corrélation suffit ». Nous pouvons analyser les données sans hypothèses sur ce qu’elles peuvent montrer.
+&gt; Le déluge des données rend la méthode scientifique obsolète, l’analyse des motifs et des relations contenues dans les données massives produit intrinsèquement un savoir significatif et éclairé sur des phénomènes complexes. Il y a maintenant une meilleure manière de faire. Les petabytes nous permettent de dire que « la corrélation suffit ». Nous pouvons analyser les données sans hypothèses sur ce qu’elles peuvent montrer.
 
 
-> Anderson, C. (2008) "[The end of theory: The data deluge makes the scientific method obsolete](https://www.wired.com/2008/06/pb-theory/)", *Wired*
+&gt; Anderson, C. (2008) "[The end of theory: The data deluge makes the scientific method obsolete](https://www.wired.com/2008/06/pb-theory/)", *Wired*
 
 ---
 
@@ -256,7 +258,7 @@ Deux événements (appelons les X et Y) sont corrélés si l’on observe une re
 
 **_L'effet cigogne_** désigne la tendance à confondre corrélation et causalité.
 
-.pull-left[<img src="./img/cigogne.jpg" height="180"/>]
+.pull-left[&lt;img src="./img/cigogne.jpg" height="180"/&gt;]
 
 .pull-right["Dans les communes qui abritent des cigognes, le taux de natalité est plus élevé que dans l’ensemble du pays. Conclusion : les cigognes apportent les bébés ! En fait, les cigognes nichent de préférence dans les villages où la natalité est plus forte en milieu rural que dans les villes."
 ]
@@ -296,7 +298,7 @@ L'abondance des données amène à un renouvellement des techniques, ouvre de no
 ![](./img/memoiredeshommes.png)]
 
 .pull-right[
-> *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permis de révéler que le jour de plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914.*]
+&gt; *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permis de révéler que le jour de plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914.*]
 
 ---
 
@@ -334,10 +336,10 @@ Concrètement, les données sont issues du travail collaboratif de divers acteur
 ---
 ## Exemple 1 : OpenStreetMap
 
-> Pourquoi faites-vous OpenStreetMap ? 
+&gt; Pourquoi faites-vous OpenStreetMap ? 
 Les données géographiques (géo-données) ne sont pas libres dans nombre de régions du monde, par exemple en France, en Belgique, au Canada. En général, ces régions ont confié la tâche de cartographie à diverses agences gouvernementales, qui en retour font de l'argent en revendant les données à des gens comme vous et moi. Si vous vivez dans un de ces pays, alors vos impôts servent à payer le travail de cartographie
 
-> En France certaines données du ministère des finances (données cadastrales pour l'identification des parcelles) peuvent être réutilisées comme référence, mais avec des conditions qui ne permettent pas une exploitation massive permettant d'obtenir une carte complète (leur précision ne permet pas nécessairement d'identifier tous les chemins, rues et routes qui traversent une même parcelle ; de plus elles ne sont souvent plus à jour).
+&gt; En France certaines données du ministère des finances (données cadastrales pour l'identification des parcelles) peuvent être réutilisées comme référence, mais avec des conditions qui ne permettent pas une exploitation massive permettant d'obtenir une carte complète (leur précision ne permet pas nécessairement d'identifier tous les chemins, rues et routes qui traversent une même parcelle ; de plus elles ne sont souvent plus à jour).
 
 .footnote[ Source : [La FAQ d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/FR:FAQ#Pourquoi_n.27utilisez_vous_pas_Google_Maps_ou_untel_pour_vos_donn.C3.A9es_.3F)]
 
@@ -355,16 +357,16 @@ En résumé :
 
 Vous aussi vous pouvez contribuer à OpenStreetMap !
 
-.center[<img src="./img/openstreetmap.png" height="400"/>] 
+.center[&lt;img src="./img/openstreetmap.png" height="400"/&gt;] 
 
 ---
 ## Exemple 2 : OpenFoodFacts
 
-.center[<img src="./img/openfoodfacts.png" height="200"/>] 
+.center[&lt;img src="./img/openfoodfacts.png" height="200"/&gt;] 
 
-> Open Food Facts est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage.
+&gt; Open Food Facts est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage.
 
-> Open Food Facts est un projet citoyen à but non lucratif créé par des milliers de volontaires à travers le monde. Vous pouvez commencer à contribuer en ajoutant un produit de votre cuisine, et nous avons plein de projets enthousiasmants auxquels vous pouvez participer de beaucoup de façons différentes.
+&gt; Open Food Facts est un projet citoyen à but non lucratif créé par des milliers de volontaires à travers le monde. Vous pouvez commencer à contribuer en ajoutant un produit de votre cuisine, et nous avons plein de projets enthousiasmants auxquels vous pouvez participer de beaucoup de façons différentes.
 
 ---
 ## Exemple 2 : OpenFoodFacts
@@ -372,7 +374,7 @@ Vous aussi vous pouvez contribuer à OpenStreetMap !
 Vous aussi vous pouvez contribuer à OpenFoodFacts !
 
 
-.center[[<img src="./img/openfoodfacts2.png" height="400"/>](https://fr.openfoodfacts.org/contribuer)]
+.center[[&lt;img src="./img/openfoodfacts2.png" height="400"/&gt;](https://fr.openfoodfacts.org/contribuer)]
 
 ---
 ## Exemple 2 : OpenFoodFacts  
@@ -383,14 +385,14 @@ Et vous connaissez très probablement une application qui utilise les données d
 
 **Yuka** ! Avec plus de 8 millions d'utilisateurs en février 2019, elle a désormais un impact non négligeable, y compris dans la stratégie des grandes marques de l'agroalimentaire..
 
-.center[[<img src="./img/yuka.png" height="300"/>](https://www.liberation.fr/desintox/2018/05/18/yuka-est-elle-une-appli-publicitaire-deguisee_1651227)]
+.center[[&lt;img src="./img/yuka.png" height="300"/&gt;](https://www.liberation.fr/desintox/2018/05/18/yuka-est-elle-une-appli-publicitaire-deguisee_1651227)]
 
 ---
 ## La Grande Annotation 
 
 **L'objectif ?** Faire en sorte que les contributions au grand débat puissent être lues et comprises. Tout un chacun peut, sur le site [grandeannotation.fr](https://grandeannotation.fr/) lire ces textes, classés par thème et par question, et les annoter pour en révéler le sens.
 
-.center[<img src="./img/grande_annotation1.png" height="200"/>]
+.center[&lt;img src="./img/grande_annotation1.png" height="200"/&gt;]
 
 Plutôt que d'obtenir une synthèse des contributions au grand débat qui soit non collaborative, opaque (car réalisée par quelques sociétés) et en partie traitée par de l'intelligence artificielle, la Grande Annotation veut construire une synthèse collective, transparente et fondée sur l'intelligence humaine.
 
@@ -400,7 +402,7 @@ Plutôt que d'obtenir une synthèse des contributions au grand débat qui soit n
 **Vous aussi vous pouvez contribuer en annotant les réponses au grand débat !**
 Ce faisant, vous créez de fait de nouvelles données qui viennent qualifier et enrichir les données initiales.
 
-.center[<img src="./img/grande_annotation2.png" height="370"/>]
+.center[&lt;img src="./img/grande_annotation2.png" height="370"/&gt;]
 ---
 class: inverse, center, middle
 
@@ -412,7 +414,7 @@ class: inverse, center, middle
 
 **Index** : Des données permettent l'identification et la mise en relation. Essentielles pour enrichir les données. Exemple : le numéro de SIRET dans la base Sirene (informations concernant les entreprises et les établissements immatriculés au répertoire interadministratif Sirene depuis sa création en 1973), gérée par l'Insee
 
-.center[[<img src="./img/base_sirene.png" height="300"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+.center[[&lt;img src="./img/base_sirene.png" height="300"/&gt;](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&amp;disjunctive.rpet&amp;disjunctive.depet&amp;disjunctive.libcom&amp;disjunctive.siege&amp;disjunctive.libapet&amp;disjunctive.libtefet&amp;disjunctive.saisonat&amp;disjunctive.libnj&amp;disjunctive.libapen&amp;disjunctive.ess&amp;disjunctive.libtefen&amp;disjunctive.categorie&amp;disjunctive.proden&amp;disjunctive.libtu&amp;disjunctive.liborigine&amp;disjunctive.libtca&amp;disjunctive.libreg_new&amp;disjunctive.nom_dept&amp;disjunctive.section)]
 
 
 ---
@@ -421,7 +423,7 @@ class: inverse, center, middle
 
 **Attributs** : Des données représentent les aspects d'un phénomène, mais ne sont pas des index (pas identifiants uniques). Exemples avec la base Sirene : région de l'établissement, département de l'établissement, Iris de l'établissement...
 
-.center[[<img src="./img/base_sirene2.png" height="300"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+.center[[&lt;img src="./img/base_sirene2.png" height="300"/&gt;](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&amp;disjunctive.rpet&amp;disjunctive.depet&amp;disjunctive.libcom&amp;disjunctive.siege&amp;disjunctive.libapet&amp;disjunctive.libtefet&amp;disjunctive.saisonat&amp;disjunctive.libnj&amp;disjunctive.libapen&amp;disjunctive.ess&amp;disjunctive.libtefen&amp;disjunctive.categorie&amp;disjunctive.proden&amp;disjunctive.libtu&amp;disjunctive.liborigine&amp;disjunctive.libtca&amp;disjunctive.libreg_new&amp;disjunctive.nom_dept&amp;disjunctive.section)]
 
 ---
 
@@ -431,10 +433,102 @@ class: inverse, center, middle
 
 Pour notre exemple précédent, les métadonnées (date de modification, producteur, nombre de téléchargements, thématiques...) sont les suivantes :
 
-.center[[<img src="./img/base_sirene3.png" height="330"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+.center[[&lt;img src="./img/base_sirene3.png" height="330"/&gt;](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&amp;disjunctive.rpet&amp;disjunctive.depet&amp;disjunctive.libcom&amp;disjunctive.siege&amp;disjunctive.libapet&amp;disjunctive.libtefet&amp;disjunctive.saisonat&amp;disjunctive.libnj&amp;disjunctive.libapen&amp;disjunctive.ess&amp;disjunctive.libtefen&amp;disjunctive.categorie&amp;disjunctive.proden&amp;disjunctive.libtu&amp;disjunctive.liborigine&amp;disjunctive.libtca&amp;disjunctive.libreg_new&amp;disjunctive.nom_dept&amp;disjunctive.section)]
 
 ---
 class: inverse, center, middle
 # Merci !
 
 Contact : [joel@datactivist.coop](mailto:joel@datactivist.coop)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
