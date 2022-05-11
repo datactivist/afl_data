@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Les données dans la pandémie de Covid-19</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Datactivist" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Les données dans la pandémie de Covid-19
+## Académie des futurs leaders
+### Samuel Goëta, Datactivist
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Académie des futurs leaders&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : http://datactivist.coop/afl_data/
+
+Sources : https://github.com/datactivist/afl_data/
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
+
+---
+class:center, middle, inverse
+
+# 1 - Retour sur l'ouverture des données covid
+
+## Un moment charnière pour l'open data 
+
+---
+### On peut débattre de tout… sauf des chiffres ?
+
+.center[&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/uUZDWW7V36A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;]
+
+---
+
+### Les données de veille sanitaire : un objet politique
+
+.pull-left[
+
+* **Focus sur les données de veille sanitaire** : contaminations, entrées à l’hôpital, passages en réanimation, décès, tests, injections de vaccins, état des stocks, part des variants, en passant par les taux d’incidence et de positivité, le niveau du R0
+
+* Une petite partie du vaste paysage de données sur la Covid-19
+
+* Une mise à l'épreuve du principe d'open data par défaut (loi pour une République numérique
+
+]
+
+.pull-right[
+
+&gt;« Toutes les mesures politiques, tous nos discours, toutes nos réflexions sont orientées et conformées, à un degré rarement atteint, par des outils quantitatifs. »
+
+
+Emmanuel Didier, "[Politique du nombre de morts](https://aoc.media/opinion/2020/04/15/politique-du-nombre-de-morts/)", _AOC_, 16 avril 2020
+
+]
+
+
+---
+
+### 11 janvier 2020 : une pandémie instantanément mise en données
+
+.pull-left[
+
+[![](img/genbank.png)](https://www.ncbi.nlm.nih.gov/nuccore/MN908947.1)
+
+]
+
+.pull-right[
+![](img/genes.png)
+]
+
+---
+
+### Juste après la publication du génôme : la course aux vaccins
+
+.pull-left[
+![](https://ichef.bbci.co.uk/news/976/cpsprodpb/349E/production/_115607431_hi064469555.jpg)
+]
+
+.pull-right[
+
+&gt; « Au petit matin, toujours en pyjama dans ma chambre, je me suis collée devant mon ordinateur pour développer un vaccin. » 
+
+ Teresa Lambe (Oxford University) dans le documentaire "La Course aux vaccins" de la BBC diffusé sur Arte
+
+]
+---
+
+### Juste après la publication du génôme : les tests PCR
+
+.pull-left[
+
+![](https://datactivist.coop/rouenmetropole/img/pcr.png)
+
+]
+
+.pull-right[
+Le **13 janvier 2020**, sur la base de ces données, une équipe de recherches allemande crée le premier test PCR de dépistage de la Covid-19. 
+]
+
+
+---
+
+### L'émergence des tableaux de bord de suivi de la pandémie
+
+.reduite.center[![](img/johnshopkins.png)]
+
+Publié le 21 janvier 2020 par Ensheng Dong, doctorant à l’école d’ingénieur de l’université Johns Hopkins, le tableau de bord de l'université Johns Hopkins a attiré en quelques semaines plusieurs millions de visiteurs.
+
+---
+
+### L'inconnu du nombre de cas
+
+.pull-left[
+.reduite.center[![](img/planpandemiegrippale.png)]
+
+]
+
+.pull-right[
+Extrait du [plan pandémie grippale de 2011](https://solidarites-sante.gouv.fr/IMG/pdf/Plan_Pandemie_Grippale_2011.pdf) : 
+&gt;"L’augmentation rapide du nombre de cas signe le début de la vague épidémique.
+Le stade 3 marque l’arrêt de la surveillance individuelle des cas par l’Institut de veille
+sanitaire."
+
+
+]
+Avertissement de Santé Publique France en mars 2020 : « _du fait de la difficulté de l'identification et de la confirmation biologique de l'ensemble des cas de Covid-19, les données présentées sous-estiment le nombre réel de cas._"
+
+
+---
+
+### Remonter les données : un défi inédit
+.pull-left[
+Les EHPAD
+[![](img/EHPAD.png)](https://www.lemonde.fr/les-decodeurs/article/2020/12/03/les-residents-d-ehpad-representent-44-des-morts-du-covid-19_6062084_4355770.html)
+]
+
+.pull-right[
+Le nombre de tests
+[
+![](img/3labos.png)](https://www.liberation.fr/checknews/2020/04/15/covid-19-est-il-vrai-que-la-france-est-incapable-de-compter-le-vrai-nombre-de-tests-pratiques-chaque_1785211/)
+]
+
+---
+
+### L'ouverture des données : une apparition tardive
+
+.pull-left[
+[![](img/nodatacovid.png)](https://twitter.com/phl43/status/1239590836947517442)
+
+]
+
+.pull-right[
+
+![](img/threadlemoine.png)
+
+]
+
+---
+
+### Une initiative citoyenne pour collecter et ouvrir les données sur la pandémie
+
+.pull-left[
+![](img/perez.png)
+]
+
+.pull-right[
+[![](img/veillecoronavirusfr.jpeg)](https://twitter.com/jdesboeufs/status/1238527335109931010)
+]
+
+---
+
+### Fin mars 2020 : ouverture des données de Santé Publique France 
+
+.pull-left[
+_« Le libre accès aux données relatives à l’épidémie, ce qu’on appelle l’open data, assure la confiance des citoyens dans les éléments qui leur sont communiqués, favorise les actions de prévention contre la propagation du virus et facilite la prise de décision.
+La diffusion et l’exploitation de ces données ont été rendues possibles grâce à une collaboration étroite entre plusieurs administrations et la société civile.»_
+
+J. Salomon, directeur national de la santé, point presse coronavirus du 28 mars 2020
+
+]
+
+.pull-right[
+[
+![](img/salomon.png)](https://www.youtube.com/watch?v=dXvObKQ24ps)
+
+]
+
+---
+### Des données très scrutées pour prévoir les déconfinements successifs
+
+![](https://www.etalab.gouv.fr/wp-content/uploads/2020/06/carte_deconfinement.jpg)
+
+---
+
+### Des données très utilisées par le public
+
+![](img/Hhwvn-data-gouv-fr-des-pics-de-fr-quentation-li-s-aux-confinements.png)
+
+---
+
+### Une relance de la politique d'open data en France
+
+.pull-left[
+![](img/bothorel.jpeg)
+]
+
+.pull-right[
+Au terme de six mois d’auditions et de concertation, le député Bothorel a rendu son rapport au Premier ministre le 23 décembre 2020. 
+
+Le rapport a abouti à une circulaire le 28 avril 2021 par le Premier ministre imposant notamment la nomination d’un administrateur des données, des algorithmes et des codes sources (AMDAC) dans chaque ministère.
+
+Chaque AMDAC a ensuite publié une feuille de route sur la donnée.
+
+]
+---
+class: inverse, center, middle
+# Merci !
+
+Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
