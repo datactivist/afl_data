@@ -233,6 +233,31 @@ Le rapport a abouti à une circulaire le 28 avril 2021 par le Premier ministre i
 Chaque AMDAC a ensuite publié une feuille de route sur la donnée.
 
 ]
+
+---
+
+### L'émergence des médiateurs de données
+
+![](img/3g.png)
+
+---
+
+### Des demandes d'ouverture de données portées par les médiateurs
+
+![](img/demandescovid.png)
+
+---
+
+### Le hackathon Covid  : comment rassembler société civile et administration ?
+
+
+![](img/hackathoncovid.png)
+---
+
+### Un accélarateur né de la pandémie
+
+![](img/aic.png)    
+
 ---
 class: inverse, center, middle
 # Merci !
