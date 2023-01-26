@@ -11,7 +11,6 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: "https://platform.twitter.com/widgets.js"
     anchor_sections: false
 params:
   event: Académie des futurs leaders
@@ -134,6 +133,21 @@ Le volume des données créées et traitées ne cesse de croitre en même temps 
 [![largeur](./img/snowmobile.png)](https://aws.amazon.com/blogs/aws/aws-snowmobile-move-exabytes-of-data-to-the-cloud-in-weeks/)
 
 ---
+### Dans les grands modèles de langage, les données mais plus encore la taille des modèles sont déterminants
+
+[![largeur](./img/chatgpt.webp)](https://towardsdatascience.com/language-model-scaling-laws-and-gpt-3-5cdc034e67bb)
+
+---
+
+GPT-3, le grand modèle de langage (large language model, LLM) créé par OpenAI en 2020 compte 175 milliards de paramètres (entraîné sur un corpus de 570GB de données, soit 500 milliards de *tokens*). S'il avait été entraîné sur une seule carte GPU, [cela aurait pris 288 ans](https://arxiv.org/pdf/2104.04473.pdf) !  Le coût pour entraîner (une fois) le modèle est estimé à quelque part entre 4,6M$ et 46M$. 
+
+GPT-4 devrait compter un ordre de grandeur en plus de paramètres.  
+
+On parallélise les GPUs mais même cela a ses limites. Même générer une prédiction à partir de ces modèles (i.e. interroger ChatGPT) est très coûteux en ressources de calcul ! 
+
+Pour approfondir : https://techmonitor.ai/technology/ai-and-automation/chatgpt-ai-compute-power
+
+---
 class:center, middle, inverse
 
 # 2 - L'industrialisation de la production des données
@@ -177,7 +191,7 @@ Dans les bases de données relationnelles, les données sont inscrites dans des 
 ![](./img/sql.jpeg)]
 
 .pull-right[
-Les bases de données relationnelles facilitent grandement le traitement des données puisqu'elles paraissent à travers une interface utilisateur : « il faut protéger les futurs usagers de grandes banques de données d’avoir à connaitre comment les données sont organisées dans la machine » (Codd 1970).
+Les bases de données relationnelles facilitent grandement le traitement des données puisqu'elles sont accessibles à travers une interface utilisateur : « il faut protéger les futurs usagers de grandes banques de données d’avoir à connaître comment les données sont organisées dans la machine » (Codd 1970).
 ]
 
 ---
@@ -296,7 +310,9 @@ L'abondance des données amène à un renouvellement des techniques, ouvre de no
 ![](./img/memoiredeshommes.png)]
 
 .pull-right[
-> *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permis de révéler que le jour de plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914.*]
+> *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permis de révéler que [le jour le plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914](https://www.opex360.com/2018/05/05/selon-site-memoire-hommes-25-septembre-1915-aurait-ete-jour-plus-meurtrier-de-lhistoire-de-larmee-francaise/).*
+
+[Mémoire des hommes](https://www.memoiredeshommes.sga.defense.gouv.fr/)]
 
 ---
 
@@ -317,9 +333,9 @@ la multitude (c'est-à-dire : nous) représente une source de richesse potentiel
 
 ## Les données crowdsourcées
 
-Des données produites par des citoyens, des communs partagés et gouvernés par leurs producteurs.
+Des données produites par un grand nombre de personnes, de manière décentralisée ; des communs partagés et gouvernés par leurs producteurs.
 
-Concrètement, les données sont issues du travail collaboratif de divers acteurs, bénévoles, dans la récolte sur le terrain.
+Concrètement, les données sont issues du travail collaboratif de divers acteurs, bénévoles (ou pas), dans la récolte sur le terrain.
 
 **Connaissez-vous un site ou une application fonctionnant via des données crowdsourcées ?**
 
@@ -334,8 +350,9 @@ Concrètement, les données sont issues du travail collaboratif de divers acteur
 ---
 ## Exemple 1 : OpenStreetMap
 
-> Pourquoi faites-vous OpenStreetMap ? 
-Les données géographiques (géo-données) ne sont pas libres dans nombre de régions du monde, par exemple en France, en Belgique, au Canada. En général, ces régions ont confié la tâche de cartographie à diverses agences gouvernementales, qui en retour font de l'argent en revendant les données à des gens comme vous et moi. Si vous vivez dans un de ces pays, alors vos impôts servent à payer le travail de cartographie
+> **Pourquoi faites-vous OpenStreetMap ?** 
+> 
+> Les données géographiques (géo-données) ne sont pas libres dans nombre de régions du monde, par exemple en France, en Belgique, au Canada. En général, ces régions ont confié la tâche de cartographie à diverses agences gouvernementales, qui en retour font de l'argent en revendant les données à des gens comme vous et moi. Si vous vivez dans un de ces pays, alors vos impôts servent à payer le travail de cartographie. 
 
 > En France certaines données du ministère des finances (données cadastrales pour l'identification des parcelles) peuvent être réutilisées comme référence, mais avec des conditions qui ne permettent pas une exploitation massive permettant d'obtenir une carte complète (leur précision ne permet pas nécessairement d'identifier tous les chemins, rues et routes qui traversent une même parcelle ; de plus elles ne sont souvent plus à jour).
 
@@ -348,7 +365,7 @@ En résumé :
 
 + OpenStreetMap (OSM) est un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde (permettant par exemple de créer des cartes sous licence libre), en utilisant le système GPS et d'autres données libres.
 
-+ À la manière de Wikipédia, **tous les internautes naviguant sur le web peuvent contribuer à la création et à la numérisation de cartes**. Des éditeurs permettent de réaliser en ligne des cartes en se basant sur un fond d'image satellitaire. Cependant, ces images satellitaires ne couvrent pas toujours en haute résolution l'ensemble du globe. C'est pourquoi il est possible d'introduire des données provenant de récepteurs GPS. Il suffit pour cela de réaliser un itinéraire et de positionner le récepteur en mode enregistrement, puis de le restituer sur le serveur de données d'OpenStreetMap 
++ À la manière de Wikipédia, **tous les internautes naviguant sur le web peuvent contribuer à la création et à la numérisation de cartes**. Des éditeurs permettent de réaliser en ligne des cartes en se basant sur un fond d'image satellitaire. Cependant, ces images satellitaires ne couvrent pas toujours en haute résolution l'ensemble du globe. C'est pourquoi il est possible d'introduire des données provenant de récepteurs GPS. Il suffit pour cela de réaliser un itinéraire et de positionner le récepteur en mode enregistrement, puis de le restituer sur le serveur de données d'OpenStreetMap.  
 
 ---
 ## Exemple 1 : OpenStreetMap
@@ -377,11 +394,11 @@ Vous aussi vous pouvez contribuer à OpenFoodFacts !
 ---
 ## Exemple 2 : OpenFoodFacts  
 
-Et vous connaissez très probablement une application qui utilise les données d'OpenFoodFacts pour "évaluer" la composition des produits alimentaires...
+Et vous connaissez très probablement une application qui utilise (ou a utilisé) les données d'OpenFoodFacts pour "évaluer" la composition des produits alimentaires...
 
 --
 
-**Yuka** ! Avec plus de 8 millions d'utilisateurs en février 2019, elle a désormais un impact non négligeable, y compris dans la stratégie des grandes marques de l'agroalimentaire..
+**Yuka** ! Avec plus de 25 millions d'utilisateurs fin 2021, elle a désormais un impact non négligeable, y compris dans la stratégie des grandes marques de l'agroalimentaire..
 
 .center[[<img src="./img/yuka.png" height="300"/>](https://www.liberation.fr/desintox/2018/05/18/yuka-est-elle-une-appli-publicitaire-deguisee_1651227)]
 
@@ -408,7 +425,7 @@ class: inverse, center, middle
 
 ---
 
-##Index
+##Index (ou identifiant unique)
 
 **Index** : Des données permettent l'identification et la mise en relation. Essentielles pour enrichir les données. Exemple : le numéro de SIRET dans la base Sirene (informations concernant les entreprises et les établissements immatriculés au répertoire interadministratif Sirene depuis sa création en 1973), gérée par l'Insee
 
@@ -432,6 +449,10 @@ class: inverse, center, middle
 Pour notre exemple précédent, les métadonnées (date de modification, producteur, nombre de téléchargements, thématiques...) sont les suivantes :
 
 .center[[<img src="./img/base_sirene3.png" height="330"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+
+---
+
+### Et pour vous, c'est quoi les données ? Quels sont vos enjeux ? 
 
 ---
 class: inverse, center, middle
