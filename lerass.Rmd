@@ -89,6 +89,32 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 - Médiation scientifique dans le développement d'une culture de la donnée
 
 ---
+
+### Présentation de l'article
+
+.pull-left[
+.red[Sources et méthodologie]
+
+- Recherche documentaire (articles de presse, documents)
+- Observations issues d'activités associatives et professionnelles
+
+.red[Principaux points]
+
+- Outils internationaux de suivi
+- Dispositifs de surveillance de la pandémie en France
+- Initiatives citoyennes de collecte et de visualisation des données
+- Relance de la politique d'open data en France
+- Emergence de médiateurs
+- Liens entre société civile et administrations ?
+
+]
+
+.pull-right[
+
+![](img/statssoc.png)
+
+]
+---
 class:center, middle, inverse
 
 # 1 - Retour sur l'ouverture des données covid
